@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width-device-width, initial-scale=1">
+	<link rel="stylesheet" href="all.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Form Lgin</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background: url(coffe.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			font-family: sans-serif;
+		}
+		.login-box{
+			width: auto;
+			position: absolute;
+			top: 50%;
+			left: 80%;
+			transform: translate(-50%,-50%);
+			color: white; 
+			border: 3px solid #fff;
+			padding: 10px;
+			width: 205px;
+		}
+		.login-box h1{
+			text-align: center;
+			font-size: 25px;
+			font-family: sans-serif;
+			margin-bottom: 5px;
+			padding: 0;
+		}
+		.textbox{
+			width: 100%;
+			overflow: hidden;
+			font-size: 20px;
+			padding: 8px 0;
+			margin: 0;
+			border-bottom: 1px solid #fff;
+		}
+		/*.textbox img{
+			float: left;
+			text-align: center;
+		}*/
+		.textbox input{
+			border: none;
+			outline: none;
+			background: none;
+			color: white;
+			font-size: 18px;
+			width: 100%;
+			float: left;
+			padding-left: 10px;
+		}
+		.btn{
+			width: 100%;
+			background: #f0f0f0;
+			/* border: 2px solid #fff; */
+			color: black;
+			padding: 5px;
+			font-size: 18px;
+			margin-top: 25px;
+			cursor: pointer;
+			margin-bottom: 15px;
+		}
+		.btn:hover{
+			background-color: rgb(233, 6, 176);
+			color: white;
+		}
+		.link{
+			 text-align: right;
+            margin-right: 35px;
+		}
+		.icon{
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-box">
+		<h1>Login</h1>
+		<div class="textbox">
+<!-- 			<p>Username</p> -->
+			<img src="user.png" class="icon" width="15px" height="17px">
+			<input type="text" placeholder="Username" name="value">
+		</div>
+
+		<div class="textbox">
+<!-- 			<p>Password</p> -->
+			<img src="lock.png" class="icon" width="15px" height="17px">
+			<input type="password" placeholder="Password" name="value">
+		</div>
+
+		<a href="file:///E:/HTML/media%20query/header.html"><input class="btn" type="button" name="" value="Sign In"></a>
+		
+		<div>
+            <label><input type="checkbox" name="remember" value="remember"/><small>Remember me</small></label>
+		</div>
+	</div>
+	
+</body>
+</html>
